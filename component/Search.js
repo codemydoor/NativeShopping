@@ -1,15 +1,12 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View, TextInput } from "react-native";
-import ItemList from "./component/itemList";
 import { AntDesign } from "@expo/vector-icons";
 import { Feather } from "@expo/vector-icons";
-import Checkout from "./component/Checkout";
 
-export default function App() {
+function Search() {
   return (
-    <View style={styles.container}>
-      {/* <View style={styles.iconContainer}>
+    <View>
+      <View style={styles.iconContainer}>
         <View style={styles.arrow}>
           <AntDesign
             name="arrowleft"
@@ -27,29 +24,13 @@ export default function App() {
           />
         </View>
       </View>
-      <View style={styles.headerAndSearchContainer}>
-        <Text style={styles.header}>Woman Jacket</Text>
-        <TextInput
-          placeholder="Search Jacket"
-          placeholderTextColor="gray"
-          style={styles.search}
-        />
-      </View>
-      <ItemList /> */}
-      <Checkout />
-
-      <StatusBar style="auto" />
     </View>
   );
 }
 
+export default Search;
+
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#E3E9FF",
-    // alignItems: "center",
-    // justifyContent: "center",
-  },
   iconContainer: {
     flex: 10,
     flexDirection: "row",

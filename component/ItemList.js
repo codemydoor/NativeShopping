@@ -2,7 +2,6 @@ import React from "react";
 import { FlatList, View, Text } from "react-native";
 import Item from "./Item";
 import { FontAwesome } from "@expo/vector-icons";
-const star = <FontAwesome name="star-o" size={24} color="black" />;
 
 function ItemList() {
   const item = [
