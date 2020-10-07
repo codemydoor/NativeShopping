@@ -9,7 +9,7 @@ import Checkout from "./component/Checkout";
 export default function App() {
   return (
     <View style={styles.container}>
-      {/* <View style={styles.iconContainer}>
+      <View style={styles.iconContainer}>
         <View style={styles.arrow}>
           <AntDesign
             name="arrowleft"
@@ -35,8 +35,8 @@ export default function App() {
           style={styles.search}
         />
       </View>
-      <ItemList /> */}
-      <Checkout />
+      <ItemList />
+      {/* <Checkout /> */}
 
       <StatusBar style="auto" />
     </View>

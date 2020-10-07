@@ -1,4 +1,5 @@
 import React from "react";
+
 import {
   View,
   Text,
@@ -32,7 +33,16 @@ function Checkout() {
           />
         </View>
       </View>
+
       <View style={styles.item}>
+        <View style={styles.heart}>
+          <AntDesign
+            name="hearto"
+            size={24}
+            color="#9296F0"
+            style={styles.carts}
+          />
+        </View>
         <Image style={styles.image} source={image} />
       </View>
       <View style={styles.elementContainer}>
@@ -115,6 +125,15 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     marginTop: 8,
   },
+  heart: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: "white",
+    position: "relative",
+    left: 280,
+    bottom: 10,
+  },
   item: {
     width: 310,
     height: 300,
@@ -122,7 +141,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 20,
     borderTopRightRadius: 20,
-    transform: [{ skewY: "8deg" }],
+    transform: [{ skewY: "4deg" }],
     backgroundColor: "white",
     marginHorizontal: 30,
     marginVertical: 50,
@@ -195,6 +214,8 @@ const styles = StyleSheet.create({
   },
   textContainer: {
     flex: 3,
+    marginHorizontal: 15,
+    marginVertical: 10,
   },
   amount: {
     color: "white",
